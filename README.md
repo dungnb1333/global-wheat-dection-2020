@@ -91,18 +91,18 @@ python evaluate.py --folds 0 --network effdet --backbone ed7 --img-size 768 --ba
 python evaluate.py --folds 1 --network fasterrcnn --backbone resnet152 --img-size 1024 --batch-size 16 --workers 8
 ```
 ### Performance
-Network                   | image-size | Fold | Valid AP |
-  :------------------------:| :---------:|:----:|:--------:|:----------:
-  [EfficientDet-ed7]()          | 768        | 0    | 0.710    |
-  [EfficientDet-ed7]()          | 768        | 1    | 0.716    |
-  [EfficientDet-ed7]()          | 768        | 2    | 0.707    |
-  [EfficientDet-ed7]()          | 768        | 3    | 0.716    |
-  [EfficientDet-ed7]()          | 768        | 4    | 0.713    |
-  [EfficientDet-ed7]()          | 1024       | 1    | 0.718    | 
-  [EfficientDet-ed7]()          | 1024       | 3    | 0.720    | 
-  [EfficientDet-ed5]()          | 512        | 4    | 0.702    | 
-  [EfficientDet-ed6]()          | 640        | 1    | 0.716    | 
-  [FasterRCNN-FPN-resnet152]() | 1024       | 1    | 0.695    |
+| Network                  | image-size | Fold | Valid AP |
+| :------------------------| :----------|:-----|:---------|
+| EfficientDet-D7          | 768        | 0    | 0.710    |
+| EfficientDet-D7          | 768        | 1    | 0.716    |
+| EfficientDet-D7          | 768        | 2    | 0.707    |
+| EfficientDet-D7          | 768        | 3    | 0.716    |
+| EfficientDet-D7          | 768        | 4    | 0.713    |
+| EfficientDet-D7          | 1024       | 1    | 0.718    | 
+| EfficientDet-D7          | 1024       | 3    | 0.720    | 
+| EfficientDet-D5          | 512        | 4    | 0.702    | 
+| EfficientDet-D6          | 640        | 1    | 0.716    | 
+| FasterRCNN-FPN-resnet152 | 1024       | 1    | 0.695    |
 
 ### Pseudo labeling
 - Base: EfficientDet-d6 image-size 640 Fold1 0.716 Valid AP
