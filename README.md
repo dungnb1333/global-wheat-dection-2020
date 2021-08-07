@@ -106,8 +106,10 @@ python evaluate.py --folds 1 --network fasterrcnn --backbone resnet152 --img-siz
 
 ### Pseudo labeling
 - Base: EfficientDet-d6 image-size 640 Fold1 0.716 Valid AP
-- Round1: Train EfficientDet-d6 10 epochs with trainset + hidden testset (output of ensembling), load weight from base checkpoint: **[old testset] 0.7719 Public LB/0.7175 Private LB** and **[new testset] 0.7633 Public LB/0.6787 Private LB**
-- Round2: Continue train EfficientDet-d6 6 epochs with trainset + hidden testset (output of pseudo labeling round1), load weight from pseudo labeling round1 checkpoint : **[old testset]0.7754 Public LB/0.7205 Private LB** and **[new testset]0.7656 Public LB/0.6897 Private LB**
+- Round1: Train EfficientDet-d6 10 epochs with trainset + hidden testset (output of ensembling), load weight from base checkpoint \
+  Result: [old testset] 0.7719 Public LB/0.7175 Private LB and [new testset] 0.7633 Public LB/0.6787 Private LB
+- Round2: Continue train EfficientDet-d6 6 epochs with trainset + hidden testset (output of pseudo labeling round1), load weight from pseudo labeling round1 checkpoint \
+  Result: [old testset]0.7754 Public LB/0.7205 Private LB and [new testset]0.7656 Public LB/0.6897 Private LB
 
 ### Kaggle kernel
 [Final submission](https://www.kaggle.com/nguyenbadung/gwd2020)
